@@ -27,6 +27,9 @@ export default {
             }
             //Send up to parent
             this.$emit('add-todo', newTodo);
+
+            //remove title on submit
+            this.title = '';
         }
     }
 }
