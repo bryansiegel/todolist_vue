@@ -1,6 +1,9 @@
 <template>
   <div id="app">
     <Header />
+    <router-link to="/">Home</router-link>
+    <router-link to="/about">About</router-link>
+    <router-view></router-view>
     <AddTodo v-on:add-todo="addTodo"/>
     <Todos v-bind:todos="todos" v-on:del-todo="deleteTodo"/>
   </div>
